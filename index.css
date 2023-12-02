@@ -1,0 +1,367 @@
+/* common cord start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.row{
+    width: 100%;
+}
+.row::after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]{
+    float: left;
+}
+
+[class*="col-"]{
+  width: 100%;
+}
+.flex-space-around{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+/* common cord end */
+
+/* nav start */
+#hand{
+  display: none;
+}
+#manuicon{
+    display: none;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+ }
+nav{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;  
+ }
+ header{
+    position:static;
+    top: 0;
+    left: 0;
+    z-index: 10;
+ }
+ .Product{
+    width: 100%;
+  }
+ .upper-nav{
+   background-color: rgb(103, 228, 103);
+   padding: 1rem 0rem;
+ }
+ .profile-icon{
+    height: 2.5rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 2px solid white;
+    filter: saturate(0);
+    transition: .5s;
+ }
+ .profile-icon:hover{
+    filter: saturate(1);
+ }
+ .nav-list{
+    transition: .5s;
+ }
+.nav-list:hover{
+  text-decoration: overline;
+  color: black;
+}
+.nav-link{
+    color: white;
+    transition: .5s;
+}
+.nav-link:hover{
+    color:rgb(22, 22, 22);
+}
+
+.lower-nav{
+    background-color: rgb(10, 180, 10);
+    padding: 1rem 0rem;
+    font-weight: bolder;
+}
+.nav-brand{
+    font-size: larger;
+}
+
+/* nav end */
+/* banner start */
+.banner-section{
+    width: 100%;
+    height: 80vh;
+    background-image: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.bannar{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.bannar-title{
+    color: yellow;
+    font-size: 3rem;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.features{
+    width: 100%;
+}
+.feature{
+    text-align: center;
+    background-color: rgb(60, 179, 111);
+    color: white;
+    padding: 0.5rem 10px;
+    border-radius: 10px;
+    gap: 1rem;
+}
+#box{
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+.box{
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+/* banner end */
+ /* main start */
+ .saidebar{
+    flex: 1;
+    padding: 1rem 1.2rem;
+ }
+ .maincontent{
+    flex:3 ;
+ }
+ main{
+    min-height: 80vh;
+    padding: 4rem 0rem;
+ }
+  .catagori-section{
+    padding: 1rem 0rem;
+  }
+  .search{
+    padding: 1px;
+    font-size: .9rem;
+    margin-left: -.2rem;
+  }
+  #search{
+    font-size: 1rem;
+  }
+  #short-by{
+    font-size: 1rem;
+  }
+  .short-by{
+    font-size: 1rem;
+  }
+   .Products{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    padding-right: 10px;
+  } 
+  .Product{
+    margin-top: 20px;
+    background-color: rgb(228, 224, 224);
+    box-shadow: 3px 4px 4px black;
+    padding: 5px;
+    transition: .2s;
+    border-radius: 5px;
+    position: relative;
+  }
+  .Product:hover{
+    box-shadow: 5px 6px 5px black;
+  }
+  .product-name{
+    padding: 8px 0px;
+  }
+  .product-prize{
+    padding: 8px 0px;
+  }
+  .btn{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    padding: 2px;
+    background-color: rgb(145, 202, 240);
+  }
+  .button{
+    padding: 5px;
+    border-radius: 8px;
+   
+  }
+  .img{
+     filter: saturate(0);
+     transition: .5s;
+  }
+  .img:hover{
+    filter: saturate(1);
+ }
+ .dot{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    display: inline-block;
+ }
+ .red{
+    background-color: red;
+ }
+ .green{
+    background-color: green ;
+ }
+ .black{
+   background-color: rgb(250, 234, 6);
+ }
+ .badge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    width: 75px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+ }
+
+
+
+ .pageness{
+     display: flex;
+     margin-top: 20px;
+     justify-content: center;
+ }
+ .pagenation{
+  height: 30px;
+  width: 25px;
+  border: 1px solid;
+  border-left: none;
+  transition: .5s;
+ }
+ .pagenation:first-child{
+ border-left: 1px solid;
+ }
+ .pagenation:hover{
+ background-color: rgb(122, 240, 122);
+ }
+ /* main end */
+/* footer start */
+.footer{
+ background-color: rgb(106, 204, 106);
+ color: white;
+ padding: 1rem;
+ margin-top: 10px;
+ font-size: 1.1rem;
+ text-align: center;
+}
+.input-footer{
+    height: 2rem;
+    border: none;
+    text-align: center;
+}
+.subscribe-button{
+    border: none;
+    height: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px 3px;
+    transition: .5s;
+}
+.subscribe-button:hover{
+    background-color: gray;
+}
+/* footer end */
+
+@media (max-width: 992px) {
+    .flex-space-around{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0rem;
+    }
+    .footer{
+        text-align: center;
+    }
+   
+    .input-footer{
+        border-radius: 5px;
+    }
+    .subscribe-button{
+        border-radius: 5px;
+    }
+   
+    .hidden{
+        display: none;
+    }
+    #hand{
+      display: block;
+      padding: 1rem 0.6rem;
+    }
+    .icon{
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(116, 159, 240);
+    }
+    #manuicon{
+        display: block;
+        cursor: pointer;
+        padding: 1rem 0.6rem;
+     
+    }
+}
+@media (max-width: 768px) {
+  .Products{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 5px 15px;
+  }
+     
+}
+
+@media (max-width: 600px) {
+  .Products{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 5px 15px;
+  } 
+      .flex-center{
+        flex-direction: column;
+    }
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}

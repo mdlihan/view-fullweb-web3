@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a full-web project">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- font osoun cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        h2{
+            padding: 2rem 0rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .full-card{
+            background-color: rgb(233, 228, 228);
+            box-shadow: 4px 6px 6px black;
+            padding: 15px 0px;
+            width: 33rem;
+            text-align: center;
+            height: 14rem;
+            margin-top: 1.5rem;
+        }
+        #fullname{
+            width: 25rem;
+            margin-left: 25px;
+        }
+        .full-card input{
+              flex: 0.9;
+              text-align: left;
+        }
+        #email{
+            width: 25rem;
+            margin-left: 25px;
+        }
+        
+        #aboutme{
+            
+            resize: none;
+        }
+        .maps{
+            text-align: center;
+        }
+        #submit{
+            padding: 5px;
+            width: 5rem;
+            transition: .5s;
+            text-align: center;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+        }
+        #textarea{
+            width: 25rem;
+            resize: none;
+            height: 4rem;
+        }
+        #submit:hover{
+            background-color: rgb(170, 169, 169);
+            border: none;
+        }
+        @media (max-width:600px) {
+            .full-card{
+               width: 100%;
+            }
+            .card{
+                padding: 0px 10px;
+            }
+            .maps{
+                margin-top: 30px;
+            }
+        }
+        body{
+            background-attachment: fixed;
+           background-image:radial-gradient(circle, rgb(98, 192, 209),rgb(2 rgb(217, 160, 235)8, 243),rgb(110, 89, 187));
+        }
+    </style>
+
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <!-- nav start -->
+        <div class="icon">
+            <i class="fa-solid fa-hands-holding-circle fa-2x" aria-hidden="true" id="hand"></i>
+            <i class="fa fa-bars fa-2x" aria-hidden="true" id="manuicon"></i>
+        </div>
+          <nav id="manu" class="hidden">
+                 <ul class="upper-nav flex-space-around">
+                    <li class="nav-list">
+                          <a href="index.html" class="nav-link">Home</a>
+                   </li>         
+                   <li class="nav-list">
+                    <a href="index(7).html" class="nav-link">Register</a>
+                  </li>
+                   <li class="nav-list">
+                     <a href="index(8).html" class="nav-link">Product</a>
+                  </li>     
+                 <li class="nav-list">
+                    <a href="index(5).html" class="nav-link">loging</a>
+               </li> 
+               <li class="nav-list">
+                <a href="index(3).html" class="nav-link">Contact</a>
+                </li> 
+               <li class="nav-list">
+                <a href="index(2).html" class="nav-link">card</a>
+                </li> 
+                <li class="nav-list">
+                    <a href="index(6).html" class="nav-link">
+                        <img class="profile-icon" src="Lihan.jpg" alt="lihan profile">
+                    </a>
+                 </li>
+                </ul>
+                <ul class="lower-nav flex-space-around">
+                    <li class="nav-list">
+                        <a href="index.html" class="nav-brand nav-link">Lihan Express</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="index(2).html" class="nav-link">
+                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                            card 2 Product -$ 124.40
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+          <!-- nav end -->
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <h2>User Registration</h2>
+    <main>
+      <div class="card flex-space-around">
+       <div class="full-card">
+           <label for="fullname" class="fullname">Name:</label>
+            <input type="fullname" name="fullname" id="fullname">
+             <br><br>
+
+             <label for="email">Email:</label>
+             <input type="email" name="email" id="email">
+             <br><br>
+
+             <div>
+                <label for="textarea">Massage:</label>
+                <textarea name="Massage" id="textarea"></textarea>
+               </div>
+               <br>
+                 <input type="submit" id="submit" name="submit">
+       </div>
+       <div class="maps">
+
+               <h4><i>Address:</i></h4>
+               <br>
+                <p>Bangladesh 2d 99</p>
+                 <p>Dhaka,Manikgonj,Saturia</p>
+                <p>phone: <a href="#">01715254568</a></p>
+
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5933.
+        725279971744!2d90.03567345!3d23.971724599999998!2m3!1f0!2f0!3f0!3m2!1i1024
+        !2i768!4f13.1!3m3!1m2!1s0x3755f8349cefbc13%3A0x67ffed42af60dd9f!2sSaturia!
+        
+        5e1!3m2!1sen!2sbd!4v1697880893106!5m2!1sen!2sbd" width="400" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+         referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+    </div>
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+        <footer class="footer flex-space-around">
+            <div>
+                <label for="email">Subscribe To Newsletter:</label>
+                <input type="email" class="input-footer" placeholder="your email"><button class="subscribe-button">SUBSCRIBE</button>
+            </div>
+            <div>
+                <p>&copy;Copyright 2023 Lihan Express. All Right Reseved</p>
+            </div>
+        </footer>
+    <!-- footer end -->
+    <script src="index.js"></script>
+</body>
+</html>

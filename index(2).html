@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a full-web project">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- font osoun cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 10px;
+  } 
+     @media (max-width: 768px) {
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 5px 15px;
+  }
+     
+}
+
+@media (max-width: 600px) {
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 5px 15px;
+  } 
+      .flex-center{
+        flex-direction: column;
+    }
+}
+
+body{
+  background-attachment: fixed;
+           background-image:radial-gradient(circle, rgb(204, 94, 180),rgb(91, 238, 238),rgb(232, 243, 241));
+        }
+      
+    </style>
+
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <!-- nav start -->
+        <div class="icon">
+          <i class="fa-solid fa-hands-holding-circle fa-2x" aria-hidden="true" id="hand"></i>
+          <i class="fa fa-bars fa-2x" aria-hidden="true" id="manuicon"></i>
+      </div>
+          <nav id="manu" class="hidden">
+                 <ul class="upper-nav flex-space-around">
+                    <li class="nav-list">
+                          <a href="index.html" class="nav-link">Home</a>
+                   </li>         
+                   <li class="nav-list">
+                    <a href="index(7).html" class="nav-link">Register</a>
+                  </li>
+                   <li class="nav-list">
+                     <a href="index(8).html" class="nav-link">Product</a>
+                  </li>     
+                 <li class="nav-list">
+                    <a href="index(5).html" class="nav-link">loging</a>
+               </li> 
+               <li class="nav-list">
+                <a href="index(3).html" class="nav-link">Contact</a>
+                </li> 
+               <li class="nav-list">
+                <a href="index(2).html" class="nav-link">card</a>
+                </li> 
+                <li class="nav-list">
+                    <a href="index(6).html" class="nav-link">
+                        <img class="profile-icon" src="Lihan.jpg" alt="lihan profile">
+                    </a>
+                 </li>
+                </ul>
+                <ul class="lower-nav flex-space-around">
+                    <li class="nav-list">
+                        <a href="index.html" class="nav-brand nav-link">Lihan Express</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="index(2).html" class="nav-link">
+                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                            card 2 Product -$ 124.40
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+          <!-- nav end -->
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <section class="grid">
+        <article class="Product">
+            <div class="badge">
+                <span>5 in stock</span>
+                <hr>
+                <span>3 should</span>
+             </div>
+             <img class="img" src="download.jpg" alt="product1">
+              <div class="product-body">   
+                <h3 class="product-name">Laptop </h3>
+                <p>
+                    Lorem ipsum dolor sit amet,
+                     eget dolor. Aenean massa.
+                     Cum sociis natoque penatibus et <a href="index(8).html">learn more</a> 
+                </p>
+                <p>
+                    <span class="dot green"></span>
+                    <span class="dot black"></span>
+                    <span class="dot red"></span>
+                </p>
+                    <h4 class="product-prize">$225.99</h4>
+                  <p class="product-rating">rating:4.5/5</p>
+                       <div class="button">
+                            <a href="index(2).html">
+                        <button class="btn" style="margin-top: 22px;">Add to card</button>
+                    </a>    
+                  </div>
+              </div>
+            </article>
+
+            <article class="Product">
+                <div class="badge">
+                    <span>5 in stock</span>
+                    <hr>
+                    <span>3 should</span>
+                 </div>
+                 <img class="img" src="download1.jpg" alt="product1">
+                  <div class="product-body">   
+                    <h3 class="product-name">Apple smart TV</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                         eget dolor. Aenean massa.
+                         Cum sociis natoque penatibus et <a href="index(8).html">learn more</a> 
+                    </p>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <h4 class="product-prize">$155.99</h4>
+                    <p class="product-rating">rating:4/5</p>
+                      <div class="button">
+                        <a href="index(2).html">
+                            <button class="btn">Add to card</button>
+                        </a>    
+                      </div>
+                  </div>
+                </article>
+
+
+                <article class="Product">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr>
+                        <span>3 should</span>
+                     </div>
+                     <img class="img" src="download3.jpg" alt="product1">
+                      <div class="product-body">   
+                        <h3 class="product-name">Apple smart Tab</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                             eget dolor. Aenean massa.
+                             Cum sociis natoque penatibus et <a href="index(8).html">learn more</a> 
+                        </p>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <h4 class="product-prize">$100.99</h4>
+                        <p class="product-rating">rating:4.6/5</p>
+                          <div class="button">
+                            <a href="index(2).html">
+                                <button class="btn" style="margin-top: 22px;">Add to card</button>
+                            </a>    
+                          </div>
+                      </div>
+                    </article>
+
+
+                    
+            <article class="Product">
+                <div class="badge">
+                    <span>5 in stock</span>
+                    <hr>
+                    <span>3 should</span>
+                 </div>
+                 <img class="img" src="download4.jpg" alt="product1">
+                  <div class="product-body">   
+                    <h3 class="product-name">Apple smart watch</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                         eget dolor. Aenean massa.
+                         Cum sociis natoque penatibus et <a href="index(8).html">learn more</a> 
+                    </p>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <h4 class="product-prize">$255.99</h4>
+                    <p class="product-rating">rating:4/5</p>
+                      <div class="button">
+                        <a href="index(2).html">
+                            <button class="btn" style="margin-top: 10px;">Add to card</button>
+                        </a>    
+                      </div>
+                  </div>
+                </article>
+
+
+                
+            <article class="Product">
+                <div class="badge">
+                    <span>5 in stock</span>
+                    <hr>
+                    <span>3 should</span>
+                 </div>
+                 <img class="img" src="download5.jpg" alt="product1">
+                  <div class="product-body">   
+                    <h3 class="product-name">Cicle</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                         eget dolor. Aenean massa.
+                         Cum sociis natoque penatibus et <a href="index(8).html">learn more</a> 
+                    </p>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <h4 class="product-prize">$455.99</h4>
+                    <p class="product-rating">rating:4/5</p>
+                      <div class="button">
+                        <a href="index(2).html">
+                            <button class="btn" style="margin-top: 22px;">Add to card</button>
+                        </a>    
+                      </div>
+                  </div>
+                </article>
+
+                <article class="Product">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr>
+                        <span>3 should</span>
+                     </div>
+                     <img class="img" src="shoes.jpg" alt="product1">
+                      <div class="product-body">   
+                        <h3 class="product-name">Apple smart shoes</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                             eget dolor. Aenean massa.
+                             Cum sociis natoque penatibus et <a href="index(8).html">learn more</a> 
+                        </p>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <h4 class="product-prize">$255.99</h4>
+                        <p class="product-rating">rating:4/5</p>
+                          <div class="button">
+                            <a href="index(2).html">
+                                <button class="btn">Add to card</button>
+                            </a>    
+                          </div>
+                      </div>
+                    </article>
+
+
+                    
+                <article class="Product">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr>
+                        <span>3 should</span>
+                     </div>
+                     <img class="img" src="phone.jpg" alt="product1">
+                      <div class="product-body">   
+                        <h3 class="product-name">Apple smart phone</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                             eget dolor. Aenean massa.
+                             Cum sociis natoque penatibus et <a href="index(8).html">learn more</a> 
+                        </p>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot black"></span>
+                            <span class="dot red"></span>
+                        </p>
+                        <h4 class="product-prize">$455.99</h4>
+                        <p class="product-rating">rating:4/5</p>
+                          <div class="button">
+                            <a href="index(2).html">
+                                <button class="btn" style="margin-top: 22px;">Add to card</button>
+                            </a>    
+                          </div>
+                      </div>
+                    </article>
+
+                
+            <article class="Product">
+                <div class="badge">
+                    <span>5 in stock</span>
+                    <hr>
+                    <span>3 should</span>
+                 </div>
+                 <img class="img" src="downlod6.jpg" alt="product1">
+                  <div class="product-body">   
+                    <h3 class="product-name">Bag</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                         eget dolor. Aenean massa.
+                         Cum sociis natoque penatibus et <a href="index(8).html">learn more</a> 
+                    </p>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <h4 class="product-prize">$489.99</h4>
+                    <p class="product-rating">rating:4/5</p>
+                      <div class="button">
+                        <a href="index(2).html">
+                            <button class="btn">Add to card</button>
+                        </a>    
+                      </div>
+                  </div>
+                </article>
+    </section>
+    <!-- main end -->
+    <!-- footer start -->
+        <footer class="footer flex-space-around">
+            <div>
+                <label for="email">Subscribe To Newsletter:</label>
+                <input type="email" class="input-footer" placeholder="your email"><button class="subscribe-button">SUBSCRIBE</button>
+            </div>
+            <div>
+                <p>&copy;Copyright 2023 Lihan Express. All Right Reseved</p>
+            </div>
+        </footer>
+    <!-- footer end -->
+    <script src="index.js"></script>
+</body>
+</html>

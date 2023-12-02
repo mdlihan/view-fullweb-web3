@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a full-web project">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- font osoun cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    img{
+        height: 10rem;
+        width: 11.5rem;
+        border-radius: 50%;
+        margin: 15px 0px;
+        box-shadow: 4px 5px 5px rgb(70, 69, 69);
+    }
+    .full-card{
+        text-align: center;
+    }
+    h3{
+        font-size: 2rem;
+        padding: 2rem 0rem;
+    }
+    .card{
+        width: 25rem;
+        padding: 1rem;
+        margin: 0 auto;
+        background-color: rgb(233, 228, 228);
+        box-shadow: 4px 6px 6px black;
+    }
+    #icon1{
+      margin-right: 20px;
+    }
+    #icon{
+        margin-left: 20px ;
+    }
+    #icon1:hover{
+        color: gray;
+    }
+    #icon:hover{
+        color: gray;
+    }
+</style>
+
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <!-- nav start -->
+        <div class="icon">
+            <i class="fa-solid fa-hands-holding-circle fa-2x" aria-hidden="true" id="hand"></i>
+            <i class="fa fa-bars fa-2x" aria-hidden="true" id="manuicon"></i>
+        </div>
+          <nav id="manu" class="hidden">
+                 <ul class="upper-nav flex-space-around">
+                    <li class="nav-list">
+                          <a href="index.html" class="nav-link">Home</a>
+                   </li>         
+                   <li class="nav-list">
+                    <a href="index(7).html" class="nav-link">Register</a>
+                  </li>
+                   <li class="nav-list">
+                     <a href="index(8).html" class="nav-link">Product</a>
+                  </li>     
+                 <li class="nav-list">
+                    <a href="index(5).html" class="nav-link">loging</a>
+               </li> 
+               <li class="nav-list">
+                <a href="index(3).html" class="nav-link">Contact</a>
+                </li> 
+               <li class="nav-list">
+                <a href="index(2).html" class="nav-link">card</a>
+                </li> 
+                <li class="nav-list">
+                    <a href="index(6).html" class="nav-link">
+                        <img class="profile-icon" src="Lihan.jpg" alt="lihan profile">
+                    </a>
+                 </li>
+                </ul>
+                <ul class="lower-nav flex-space-around">
+                    <li class="nav-list">
+                        <a href="index.html" class="nav-brand nav-link">Lihan Express</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="index(2).html" class="nav-link">
+                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                            card 2 Product -$ 124.40
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+          <!-- nav end -->
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+        <main class="full-card">
+            <h3>User Profile</h3>
+            <div class="card">
+                <img src="Lihan.jpg" alt="lihan">
+                <h4>Ratul mahamud(Lihan)</h4>
+                <br>
+                <h5>mdratul969696@gmail.com</h5>
+                <br>
+                <h6>I love to shop different type of gadgets</h6>
+                <br>
+                <i class="fa-solid fa-trash-can" id="icon1"></i> <i class="fa-solid fa-pen-to-square" id="icon"></i>
+            </div>
+        </main>
+    <!-- main end -->
+    <!-- footer start -->
+        <footer class="footer flex-space-around">
+            <div>
+                <label for="email">Subscribe To Newsletter:</label>
+                <input type="email" class="input-footer" placeholder="your email"><button class="subscribe-button">SUBSCRIBE</button>
+            </div>
+            <div>
+                <p>&copy;Copyright 2023 Lihan Express. All Right Reseved</p>
+            </div>
+        </footer>
+    <!-- footer end -->
+    <script src="index.js"></script>
+</body>
+</html>
